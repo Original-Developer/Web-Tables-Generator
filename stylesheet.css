@@ -35,7 +35,10 @@ label {
     background-color: var(--white);
     color: var(--background);
     font-size: 20px;
-    padding: 7px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s background-color;
@@ -92,7 +95,6 @@ footer {
     color: black;
     margin-top: 15px;
     border-radius: 10px;
-    padding: 5px;
     height: fit-content;
 }
 #loading {
