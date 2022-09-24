@@ -1,0 +1,52 @@
+<!-- START -->
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" lang="en-GB">
+    <head>
+        <title>Web Tables Generator</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Create cool tables with ease using JSON!" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Tables" />
+        <meta name="author" content="Core" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Web Tables Generator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="Create cool, professional modern tables with ease through a JSON file in no time!" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/Original-Developer/Web-Tables-Generator/master/src/tables.png" />
+        <meta property="og:image:type" content="image/png">
+        <link rel="icon" href="./src/tables.png" type="image/png">
+        <link rel="stylesheet" href="./stylesheet.css" />
+    </head>
+    <body>
+        <div id="main">
+            <h1>Web Tables Generator</h1>
+            <p>With this tables editor, you will be able to easily create modern HTML5 tables through the usage of a 
+            <b>json</b> file. Just upload it and let the web do the hard work!</p>
+            <div id="code">
+<code><pre>
+{
+    "cols": [
+        "#",
+        "Name",
+        "Age",
+        "Skill"
+    ],
+    "rows": [
+        [1, "John Doe", 28, "76"],
+        [2, "James Cruise", 53, "15"],
+        [3, "Clara Homes", 14, "32"],
+        [4, "Matt Jobs", 47, "100"]
+    ]
+}</pre></code>
+            </div>
+            <input type="file" id="upload" hidden />
+            <label for="upload">Upload File</label>
+        </div>
+        <div id="loading"></div>
+        <table id="table"></table>
+        <footer>Made with &hearts; by Core</footer>
+        <script src="./loadfile.js"></script>
+        <script src="./tables.js"></script>
+    </body>
+</html>
+<!--  END  -->

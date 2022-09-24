@@ -1,0 +1,14 @@
+{
+    "cols": [
+        "#",
+        "Name",
+        "Age",
+        "Skill"
+    ],
+    "rows": [
+        [1, "John Doe", 28, "76"],
+        [2, "James Cruise", 53, "15"],
+        [3, "Clara Homes", 14, "32"],
+        [4, "Matt Jobs", 47, "100"]
+    ]
+}

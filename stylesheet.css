@@ -1,0 +1,150 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+}
+:root {
+    --background: rgb(76, 121, 247);
+    --white: rgb(243, 243, 243);
+    --lightgrey: rgb(223, 223, 223);
+    --grey: rgb(202, 202, 202);
+    --red: rgb(250, 59, 59);
+    --orange: rgb(237, 109, 62);
+    --yellow: rgb(255, 227, 46);
+    --green: rgb(72, 215, 84);
+    --blue: rgb(62, 109, 237);
+    --purple: rgb(179, 83, 231);
+}
+
+/* Tags */
+body {
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    font-size: 18px;
+}
+h1 {
+    font-size: 40px;
+}
+p {
+    margin-top: 10px;
+}
+label {
+    margin-top: 18px;
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--background);
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+label:hover {
+    background-color: var(--grey);
+}
+th {
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    padding-inline: 15px;
+    border: 1px solid var(--grey);
+}
+footer {
+    width: 200px;
+    position: fixed;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+}
+
+/* Classes */
+.progress {
+    background: var(--lightgrey);
+    justify-content: flex-start;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 10px;
+    width: 120px;
+}
+.value {
+    border-radius: 15px;
+    height: 10px;
+}
+
+/* IDs */
+#main, #loading {
+    max-width: 600px;
+    position: absolute;
+    left: 50%; top: 50%;
+    text-align: justify;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#code {
+    background-color: var(--white);
+    width: 100%;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    height: fit-content;
+}
+#loading {
+    display: none;
+}
+#loading::before {
+    animation: 1s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 5px var(--white);
+    border-bottom-color: var(--grey);
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform;
+}
+#table {
+    display: none;
+    position: absolute;
+    left: 50%; top: 50%;
+    border-collapse: collapse;
+    padding: 30px;
+    border-radius: 14px;
+    background-color: var(--white);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: rgb(30, 30, 30);
+}
+
+/* Animations */
+@keyframes fade {
+    from {
+        opacity: 1; 
+    } to { 
+        opacity: 0; 
+    }
+}
+@keyframes fade2 {
+    from {
+        opacity: 0; 
+    } to { 
+        opacity: 1; 
+    }
+}
+@keyframes spinner {
+    from {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    } to {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
